@@ -1,0 +1,507 @@
+*{
+    border:0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+                                            /* -- header styling start -- */
+
+header{
+    background: royalblue;
+    width: 100%;
+    min-width: 900px;
+    height: 56px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 11;
+
+}
+    /* --logo-- */
+.logo-container{
+    margin:17px 0px;
+}
+#flipkart-logo{
+    width:75px;
+}
+    /* --searchbar-- */     
+.searchbar-container{
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+    height: 56px;
+}
+#searchbar{
+    width:500px;
+    height:34px;
+    padding: 0px 16px;
+}
+#search-button{
+    height:34px;
+    width: 40px;
+    background: white;
+}
+     /* --login-- */
+.login{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.login a{
+    margin-left: 20px;
+    padding: 5px 35px;
+    background: white;
+    color: royalblue;
+    text-decoration: none;
+}
+    /* --seller-- */
+.seller{
+    width:180px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 56px;
+
+}
+.seller a{
+    padding-left: 25px;
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+    
+}    
+/* --more-- */
+.more{
+    width: 110px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    position: relative;
+    height: 56px;
+}  
+ul{
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.16);
+
+}
+ul li {
+    list-style: none;
+    font-size: 18px;
+} 
+.dropdown-more{
+    padding: 0px 0rem;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 56px;
+    right: -40px;
+
+    height: 0;
+    overflow: hidden;
+}
+ul li a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+ul li:hover{
+    background:rgb(236, 236, 236);
+    color: royalblue;
+}
+
+.more:hover .dropdown-more {
+    height: 246px;
+  }
+.more:hover .arrows{
+    transform: rotate(-225deg);
+     margin-top: 4px;
+}
+
+.more-a{
+    text-decoration: none;
+    font-size: 17px;
+    color:rgb(255, 255, 255);
+} 
+
+.arrows {
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 0.15em solid currentColor;
+    border-bottom: 0.15em solid currentColor;
+    transform: rotate(-45deg);
+    margin-left: 0.38em;
+    margin-top: -0.25em;
+  }
+/* --cart-- */
+.cart{
+    width: 70px;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+.cart a{
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color:rgb(255, 255, 255);
+}
+.dummy{
+    height: 56px;
+    width: 100%;
+}
+
+                                            /* -- header styling end -- */
+
+                                            /* -- banner-1 styling start -- */
+
+.banner1-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 17vh;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+}
+
+.banner1-container a{
+    text-decoration: none;
+    display: flex;
+}
+.banner1-items{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 32px;
+    align-items: center;
+
+}
+.banner1-items img{
+    height: 60px;
+    width: 60px;
+}
+.banner1-items p{
+    text-decoration: none;
+    font-size: 13px;
+    text-decoration: none;
+    padding-top: 5px;
+    color: black;
+    font-weight: 600;
+}
+.banner1-items:hover p{
+    color: royalblue;
+}
+
+                                            /* -- banner-1 styling end -- */
+                                            
+                                     /* xxx-- banner-2 main styling start --xxx */
+
+.banner2-main-container{
+   background: rgba(225, 225, 225, 0.5);   
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   row-gap: 7px;
+   padding: 15px 7px ;                                   
+}
+
+                                            /* -- banner-2 styling start -- */
+
+ 
+.carousel-control-prev{
+    width: 100px;
+    top:80px;
+    height: 80px;
+}
+.carousel-control-next{
+    width: 100px;
+    top:80px;
+    height: 80px;
+}
+
+                                            /* -- to be changed to slide -- */
+
+                                            /* -- banner-2 styling end -- */
+
+
+                                            /* -- banner-3 styling START -- */
+
+                                           /* -- banner-3 styling END -- */
+                                           
+                                        /* --- common-container styling start --- */
+
+.common-container{
+    display: flex;
+    width:100%; 
+    background: #ffffff;         
+    height:365px;
+}
+.top-offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    flex: 1;
+    background: url('/flipkart/images/flipkartbg1.svg');
+}
+.top-offer h2{
+    padding: 10px;
+    font-size: 30px;
+}
+.top-offer button{
+    background: royalblue;
+    width: 95px;
+    height: 38px;
+    border-radius: 2px;
+    font-size: 13px;
+    color: white;
+    padding: 5px;
+}
+.top-offer button:hover{
+    background: royalblue;
+    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.445);
+}
+.carouuuuuu{
+    flex:6;
+    display: flex;
+    overflow:hidden; 
+    column-gap: 30px;
+    position: relative;
+    
+}
+.items{
+    display: flex;
+}
+.carouuuuuu .prev{
+    transform: translateY(-50%);
+    background: white;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0,.3);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: absolute;
+    top: 50%;
+    padding: 40px 20px;
+    z-index: 10;
+}
+.carouuuuuu .prev:hover{
+    background: rgb(244, 244, 244);
+}
+.carouuuuuu .next:hover{
+    background: rgb(244, 244, 244);
+}
+.carouuuuuu .next{
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 40px 20px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0,.3);
+    background: white;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    z-index: 10;
+}
+.carouuuuuu  .a1{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1:hover img{
+    transform: scale(1.05);
+}
+
+.a1 h2{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-align: center;
+    text-align: center;
+    line-height: 20px;
+}
+.a1 h3{
+    padding-bottom: 5px;
+    font-size: 16px;
+    text-align: center;
+    color:#388e3c;
+}
+.a1 h4{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(163, 163, 163);
+}
+
+.carouuuuuu img{
+    height: 170px;
+    transition: all .2s ease-in-out;    
+}
+
+                                        /* --- common-container styling start --- */
+
+
+                                             /* -- banner-4 styling START -- */
+
+
+.banner4-container .carouuuuuu{
+    flex:5;
+}
+
+#samsung-ad{
+    background: url(/flipkart/images/flipkart16.webp);
+    background-size: cover;
+    aspect-ratio: 4/ 3;
+    flex:1;
+}
+
+                                           /* -- banner-4 styling END -- */
+
+                                           /* -- banner-5 styling START -- */
+
+
+                                           /* -- banner-5 styling ENDS -- */
+
+                                           /* -- banner-6 styling START -- */
+
+
+                                           /* -- banner-6 styling ENDS -- */
+
+
+                                           /* -- banner-7 styling START -- */
+
+
+                                           /* -- banner-7 styling ENDS -- */
+
+
+                                    /* xxx-- banner-2 main styling end --xxx */
+
+                                    /* --- brand-directory styling START --- */
+
+.brand-directory{
+    padding: 30px;
+}
+.brand-directory p{
+    font-size: 12px;
+    color: grey;
+    line-height: 20px;
+    word-spacing: 2px;
+}
+.grey-head{
+    color: grey;
+    font-size: 14px;
+}
+.bold-head{
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+                                    /* --- brand-directory styling ENDS --- */
+
+                                    /* xx--- Footer styling START ---xx */
+                                   
+footer{
+    background: #172337;
+}
+
+                                    /* --- Footer1 styling START --- */
+                                    
+.footer1{
+    display: flex;
+    height: 250px;
+    
+}                 
+.footer1-1{
+    flex: 3;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    align-items: flex-start;
+    border-right: 1px grey solid ;
+
+}      
+.footer1-1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer1 h2{
+    color: grey;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.footer1 a{
+    font-size: 12px;
+    padding: 3px 0px;
+    text-decoration: none;
+    color: white;
+}
+.footer1 a:hover{
+    text-decoration: underline;
+}
+.footer1-2{
+    flex: 2;
+    display: flex;
+    padding-top: 35px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer1-2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 13rem;
+}
+.footer1 p{
+    color: white;
+    font-size: 12px;
+}
+#number{
+    color:rgb(56, 97, 242);
+    font-size: 13px;
+}
+#number:hover{
+    cursor: pointer;
+}
+
+                                    /* --- Footer1 styling ENDS --- */
+
+                                    /* --- Footer2 styling START --- */
+
+.footer2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px ;
+}
+.footer2 h4{
+    font-size: 14px;
+    color: white;
+}
+.footer2 a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+.footer2-1{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer2-2{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+}
+
